@@ -1,4 +1,4 @@
 # Atividades do curso Afrodev
-## pela ShareRH e CI&T
+## Pela ShareRH e CI&T
 
 Todas as atividades propostas durante o curso Afrodev 1ª edição, na modalidade Android (Kotlin)
