@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Ticket Buyer</string>
+    <string name="comprar">Comprar</string>
+    <string name="valor_do_ingresso">Valor do ingresso</string>
+    <string name="ingresso_vip">Ingresso VIP</string>
+    <string name="ingresso_comum">Ingresso Comum</string>
+    <string name="acdc_logo">ACDC Logo</string>
+</resources>

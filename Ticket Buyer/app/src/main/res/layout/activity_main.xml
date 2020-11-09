@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/acdcIcon"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:contentDescription="@string/acdc_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/acdc" />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/acdcIcon"
+        >
+
+        <RadioButton
+            android:id="@+id/radio_commom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ingresso_comum"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            android:onClick="onRadioButtonClicked"/>
+
+        <RadioButton
+            android:id="@+id/radio_vip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ingresso_vip"
+            android:textSize="22sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            android:onClick="onRadioButtonClicked"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/ticketLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="@string/valor_do_ingresso"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="@+id/radio_group"
+        app:layout_constraintStart_toStartOf="@+id/radio_group"
+        app:layout_constraintTop_toBottomOf="@+id/radio_group" />
+
+    <TextView
+        android:id="@+id/ticketPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="@+id/ticketLabel"
+        app:layout_constraintStart_toStartOf="@+id/ticketLabel"
+        app:layout_constraintTop_toBottomOf="@+id/ticketLabel" />
+
+    <Button
+        android:id="@+id/btnBuy"
+        android:paddingHorizontal="40dp"
+        android:paddingVertical="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/comprar"
+        android:textSize="18sp"
+        android:backgroundTint="@color/red_500"
+        app:layout_constraintEnd_toEndOf="@+id/ticketPrice"
+        app:layout_constraintStart_toStartOf="@+id/ticketPrice"
+        app:layout_constraintTop_toBottomOf="@+id/ticketPrice" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
